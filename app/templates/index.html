@@ -1,9 +1,54 @@
 {% extends "base.html" %}
+{% block title %}AP Books{% endblock %}
 
 {% block header %}
-  <h1>{% block title %}Index{% endblock %}</h1>
+  <h1>AirPebble Books</h1>
 {% endblock %}
 
 {% block content %}
-  <p>I am a text</p>
+
+  <p>Check your books online or in our ficticious store!</p>
+  <p><em>Our selection</em></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col" hidden>#</th>
+        <th scope="col">Cover</th>
+        <th scope="col">Name_Book</th>
+        <th scope="col">Author</th>
+        <th scope="col">Price (£)</th>
+        <th scope="col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" hidden>book_id</th>
+        <th>cover</th>
+        <td>The link in the wind</td>
+        <td>Nathan</td>
+        <td>17.80</td>
+        <td>Hardback</td>
+      </tr>
+      <tr>
+        <th scope="row" hidden>book_id</th>
+        <th>cover</th>
+        <td>Tales of sea</td>
+        <td>Rupert</td>
+        <td>13.00</td>
+        <td>Paperback</td>
+      </tr>
+      <!-- Only uncoment when implemented -->
+      <!-- {% for book in books %}
+      <tr>
+        <th scope="row" hidden>{{ book.id }}</th>
+        <th>{{ book.cover }}</th>
+        <td>{{ book.name }}</td>
+        <td>{{ book.author }} hr</td>
+        <td>{{ book.price }}</td>
+        <td>{{ book.type }}</td>
+      </tr>
+      {% endfor %} -->
+    </tbody>
+  </table>
 {% endblock %}

@@ -1,0 +1,5 @@
+Use "pytest" to run the standard test cases.
+    py -m pytest -s
+Use "coverage run -m pytest" to measure code coverage of tests.
+    Report: coverage report
+    HTML: coverage HTML
